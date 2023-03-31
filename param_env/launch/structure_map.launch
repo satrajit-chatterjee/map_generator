@@ -36,11 +36,7 @@
   </node>
 
 
-  <arg name="rviz_config" default="$(find param_env)/launch/default.rviz"/>
-  <node pkg="rviz"
-    type="rviz"
-    name="rviz"
-    args="-d $(arg rviz_config)"/>
+  <include file="$(find param_env)/launch/rviz.launch"/>
 
 
 </launch>
