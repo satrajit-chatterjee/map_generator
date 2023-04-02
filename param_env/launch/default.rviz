@@ -8,6 +8,7 @@ Panels:
         - /Status1
         - /Grid1
         - /Axes1
+        - /Path1
       Splitter Ratio: 0.5
     Tree Height: 606
   - Class: rviz/Selection
@@ -57,7 +58,7 @@ Visualization Manager:
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
-        Max Value: 4.99781608581543
+        Max Value: 4.99882173538208
         Min Value: -0.03999999910593033
         Value: true
       Axis: Z
@@ -85,11 +86,50 @@ Visualization Manager:
       Use rainbow: true
       Value: true
     - Class: rviz/Axes
-      Enabled: true
+      Enabled: false
       Length: 2
       Name: Axes
       Radius: 0.10000000149011612
       Reference Frame: <Fixed Frame>
+      Value: false
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 25; 255; 0
+      Enabled: true
+      Head Diameter: 0.30000001192092896
+      Head Length: 0.20000000298023224
+      Length: 0.30000001192092896
+      Line Style: Billboards
+      Line Width: 0.10000000149011612
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.029999999329447746
+      Shaft Diameter: 0.10000000149011612
+      Shaft Length: 0.10000000149011612
+      Topic: /rrt_star_planner/planner/rrt_plan
+      Unreliable: false
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /sim_manager/final_waypoints
+      Name: Marker
+      Namespaces:
+        pose_array: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /robot_marker
+      Name: Marker
+      Namespaces:
+        robot: true
+      Queue Size: 100
       Value: true
   Enabled: true
   Global Options:
@@ -119,25 +159,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 58.76529312133789
+      Distance: 30.132244110107422
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: 0.30612415075302124
+        Y: -2.9018821716308594
+        Z: 0.09128136187791824
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.919796347618103
+      Pitch: 0.9397976398468018
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.0906100273132324
+      Yaw: 6.063794136047363
     Saved: ~
 Window Geometry:
   Displays:
